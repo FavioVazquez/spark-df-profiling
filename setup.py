@@ -9,7 +9,7 @@ except ImportError:
 
 setup(
     name='spark-df-profiling-optimus',
-    version='0.0.1',
+    version='0.0.2',
     author='Favio Vazquez - Julio Antonio Soto de Vicente',
     author_email='favio.vazquez@ironmussa.com',
     packages=['spark_df_profiling_optimus'],
