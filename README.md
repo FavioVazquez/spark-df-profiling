@@ -21,11 +21,11 @@ Available [here](http://nbviewer.jupyter.org/github/julioasotodv/spark-df-profil
 
 If you are using [Anaconda](https://www.continuum.io/downloads), you already have all the needed dependencies. So you just have to `pip install` the package without dependencies (just in case pip tries to overwrite your current dependencies):
 
-	pip install --no-deps spark-df-profiling
+	pip install --no-deps spark-df-profiling-optimus
 
 If you don't have pandas and/or matplotlib installed:
 
-	pip install spark-df-profiling
+	pip install spark-df-profiling-optimus
 
 ## Usage
 
