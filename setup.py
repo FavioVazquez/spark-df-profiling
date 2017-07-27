@@ -14,6 +14,7 @@ setup(
     author_email='favio.vazquez@ironmussa.com',
     packages=['spark_df_profiling_optimus'],
     url='https://github.com/FavioVazquez/spark-df-profiling-optimus',
+    download_url='https://github.com/FavioVazquez/spark-df-profiling-optimus/archive/0.0.2.tar.gz',
     license='MIT',
     description='Create HTML profiling reports from Apache Spark DataFrames',
     install_requires=[
