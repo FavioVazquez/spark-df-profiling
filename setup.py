@@ -8,17 +8,17 @@ except ImportError:
     from distutils.core import setup
 
 setup(
-    name='spark-df-profiling',
-    version='1.1.13',
-    author='Julio Antonio Soto de Vicente',
-    author_email='julio@esbet.es',
-    packages=['spark_df_profiling'],
-    url='https://github.com/julioasotodv/spark-df-profiling',
+    name='spark-df-profiling-optimus',
+    version='0.0.1',
+    author='Favio Vazquez - Julio Antonio Soto de Vicente',
+    author_email='favio.vazquez@ironmussa.com',
+    packages=['spark_df_profiling_optimus'],
+    url='https://github.com/FavioVazquez/spark-df-profiling-optimus',
     license='MIT',
     description='Create HTML profiling reports from Apache Spark DataFrames',
     install_requires=[
         "pandas>=0.17.0",
-        "matplotlib>=1.4",
+        "matplotlib>=2.0",
         "jinja2>=2.8",
         "six>=1.9.0"
     ],

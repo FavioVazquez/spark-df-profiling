@@ -19,7 +19,7 @@ matplotlib.use('Agg')
 import numpy as np
 import os
 import pandas as pd
-import spark_df_profiling.formatters as formatters, spark_df_profiling.templates as templates
+import spark_df_profiling_optimus.formatters as formatters, spark_df_profiling_optimus.templates as templates
 from matplotlib import pyplot as plt
 from pkg_resources import resource_filename
 import six
@@ -61,7 +61,7 @@ def describe(df, bins, corr_reject, **kwargs):
     except:
         pass
 
-    matplotlib.style.use(resource_filename(__name__, "spark_df_profiling.mplstyle"))
+    matplotlib.style.use(resource_filename(__name__, "spark_df_profiling_optimus.mplstyle"))
     
     # Function to "pretty name" floats:
     def pretty_name(x):
@@ -508,10 +508,10 @@ def to_html(sample, stats_object):
         raise TypeError("sample must be of type pandas.DataFrame")
 
     if not isinstance(stats_object, dict):
-        raise TypeError("stats_object must be of type dict. Did you generate this using the spark_df_profiling.describe() function?")
+        raise TypeError("stats_object must be of type dict. Did you generate this using the spark_df_profiling_optimus.describe() function?")
 
     if set(stats_object.keys()) != {'table', 'variables', 'freq'}:
-        raise TypeError("stats_object badly formatted. Did you generate this using the spark_df_profiling-eda.describe() function?")
+        raise TypeError("stats_object badly formatted. Did you generate this using the spark_df_profiling_optimus-eda.describe() function?")
 
     def fmt(value, name):
         if pd.isnull(value):

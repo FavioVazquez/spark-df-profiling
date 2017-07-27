@@ -4,7 +4,7 @@ Formatters are utilities for formatting numbers by adding HTML code or CSS class
 import numpy as np
 
 SKEWNESS_CUTOFF = 20
-DEFAULT_FLOAT_FORMATTER = u'spark_df_profiling.__default_float_formatter'
+DEFAULT_FLOAT_FORMATTER = u'spark_df_profiling_optimus.__default_float_formatter'
 
 
 def gradient_format(value, limit1, limit2, c1, c2):

@@ -5,7 +5,7 @@
 from jinja2 import Environment, PackageLoader
 
 # Initializing Jinja
-pl = PackageLoader('spark_df_profiling', 'templates')
+pl = PackageLoader('spark_df_profiling_optimus', 'templates')
 jinja2_env = Environment(lstrip_blocks=True, trim_blocks=True, loader=pl)
 
 # Mapping between template name and file

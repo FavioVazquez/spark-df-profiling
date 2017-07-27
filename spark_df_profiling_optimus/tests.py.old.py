@@ -6,12 +6,12 @@ import datetime
 import numpy as np
 import pandas as pd
 import six
-import spark_df_profiling
-from spark_df_profiling.base import describe, to_html
+import spark_df_profiling_optimus
+from spark_df_profiling_optimus.base import describe, to_html
 import tempfile
 import shutil
 import os
-check_is_NaN = "spark_df_profiling.check_is_NaN"
+check_is_NaN = "spark_df_profiling_optimus.check_is_NaN"
 
 
 class DataFrameTest(unittest.TestCase):
@@ -142,7 +142,7 @@ class DataFrameTest(unittest.TestCase):
 
     def test_export_to_file(self):
 
-        p = spark_df_profiling.ProfileReport(self.df)
+        p = spark_df_profiling_optimus.ProfileReport(self.df)
         filename = os.path.join(self.test_dir, "profile_%s.html" % hash(self))
         p.to_file(outputfile=filename)
 

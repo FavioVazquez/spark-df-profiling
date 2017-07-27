@@ -4,8 +4,8 @@ import os
 from .templates import template
 from .base import describe, to_html
 
-NO_OUTPUTFILE = "spark_df_profiling.no_outputfile"
-DEFAULT_OUTPUTFILE = "spark_df_profiling.default_outputfile"
+NO_OUTPUTFILE = "spark_df_profiling_optimus.no_outputfile"
+DEFAULT_OUTPUTFILE = "spark_df_profiling_optimus.default_outputfile"
 
 
 class ProfileReport(object):
@@ -30,16 +30,16 @@ class ProfileReport(object):
             library_path = os.path.abspath(os.path.dirname(__file__))
             css_path=os.path.join(library_path,'templates/css/')
             js_path=os.path.join(library_path,'templates/js/')
-            utils.fs.mkdirs("/FileStore/spark_df_profiling/css")
-            utils.fs.mkdirs("/FileStore/spark_df_profiling/js")
+            utils.fs.mkdirs("/FileStore/spark_df_profiling_optimus/css")
+            utils.fs.mkdirs("/FileStore/spark_df_profiling_optimus/js")
             utils.fs.cp("file:" + css_path + "bootstrap-theme.min.css", 
-                        "/FileStore/spark_df_profiling/css/bootstrap-theme.min.css")
+                        "/FileStore/spark_df_profiling_optimus/css/bootstrap-theme.min.css")
             utils.fs.cp("file:" + css_path + "bootstrap.min.css", 
-                        "/FileStore/spark_df_profiling/css/bootstrap.min.css")
+                        "/FileStore/spark_df_profiling_optimus/css/bootstrap.min.css")
             utils.fs.cp("file:" + js_path  + "bootstrap.min.js", 
-                        "/FileStore/spark_df_profiling/js/bootstrap.min.js")
+                        "/FileStore/spark_df_profiling_optimus/js/bootstrap.min.js")
             utils.fs.cp("file:" + js_path  + "jquery.min.js", 
-                        "/FileStore/spark_df_profiling/js/jquery.min.js")
+                        "/FileStore/spark_df_profiling_optimus/js/jquery.min.js")
             return template('wrapper_static').render(content=self.html)
 
     def get_description(self):
