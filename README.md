@@ -1,3 +1,7 @@
+# This DF profiling is for Optimus use. Check out Optimus page --->>> https://github.com/ironmussa/Optimus
+
+[![built_by iron](https://img.shields.io/badge/built_by-iron-FF69A4.svg)](http://ironmussa.com)
+
 # HTML profiling reports from Apache Spark DataFrames
 
 Generates profile reports from an [Apache Spark DataFrame](https://spark.apache.org/docs/latest/sql-programming-guide.html). It is based on [`pandas_profiling`](https://github.com/JosPolfliet/pandas-profiling), but for Spark's DataFrames instead of pandas'.
@@ -86,6 +90,6 @@ profile.to_file(outputfile="/tmp/myoutputfile.html")
 * Apache Spark (who would imagine!) -> requires Spark `>=1.5.0` (compatible with `2.0.0` also).
 * **An internet connection.** spark-df-profiling requires an internet connection to download the Bootstrap and JQuery libraries. You can choose to embed them in the HTML template code, should you desire.
 * jinja2 (`>=2.8`) -> needed for template rendering. Only needed in the Spark driver.
-* matplotlib (`>=1.4`) -> needed for histogram creation. Only needed in the Spark driver.
+* matplotlib (`>=2.0`) -> needed for histogram creation. Only needed in the Spark driver.
 * pandas (`>=0.17.0`) -> needed for internal data arrangement. Only needed in the Spark driver.
 * six (`>=1.9.0`) -> needed for py2/3 compatibility. Only needed in the Spark driver.
