@@ -9,12 +9,12 @@ except ImportError:
 
 setup(
     name='spark-df-profiling-optimus',
-    version='0.0.5',
+    version='0.1.0',
     author='Favio Vazquez - Julio Antonio Soto de Vicente',
     author_email='favio.vazquez@ironmussa.com',
     packages=['spark_df_profiling_optimus'],
     url='https://github.com/FavioVazquez/spark-df-profiling-optimus',
-    download_url='https://github.com/FavioVazquez/spark-df-profiling-optimus/archive/0.0.5.tar.gz',
+    download_url='https://github.com/FavioVazquez/spark-df-profiling-optimus/archive/0.1.0.tar.gz',
     license='MIT',
     description='Create HTML profiling reports from Apache Spark DataFrames',
     install_requires=[
