@@ -13,9 +13,6 @@ except ImportError:
 import base64
 from itertools import product
 
-import matplotlib
-matplotlib.use('Agg')
-
 import numpy as np
 import os
 import pandas as pd
