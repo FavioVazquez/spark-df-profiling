@@ -17,6 +17,7 @@ import numpy as np
 import os
 import pandas as pd
 import spark_df_profiling_optimus.formatters as formatters, spark_df_profiling_optimus.templates as templates
+import matplotlib
 from matplotlib import pyplot as plt
 from pkg_resources import resource_filename
 import six
